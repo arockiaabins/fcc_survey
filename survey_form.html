@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Restaurunt Survey</title>
+		<link href="survey_form_style.css" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="maintitle">
+				<h1 id="title">Restaurunt Survey</h1>
+			</div>
+		
+			<div id="des">
+				<h4>Please help us learn</h4>
+				<p id="description">what we're doing right and
+				   what we need more work
+				   on by filling out this survey.
+				</p>
+			</div>
+			
+		<div id="forms">
+			<form id="survey-form">
+			<fieldset>
+			<legend>
+			<p>How many in your party? <input type="text" name="count"> Date : <input type="date" name="dod">
+			</p></legend>
+				<input type="radio" name="selection" value="dine_in" checked>Dine in
+				<input type="radio" name="selection" value="take_out">Take out
+				<input type="radio" name="selection" value="breakfast">Breakfast
+				<input type="radio" name="selection" value="lunch">Lunch
+				<input type="radio" name="selection" value="dinner">Dinner
+			</fieldset>
+		</div>
+		<br>
+		<div>
+			<p><label id="name-label" for="name">Enter your name:</label>
+			<input type="text" id="name" name="name" size="50" placeholder="Enter your name..." required></p>
+			<p><label id="email-label" for="email">Enter your Email:</label>
+			<input type="email" id="email" name="email" size="50" placeholder="Enter your email..."required></p>
+			<p><label id="number-label" for="number">Enter your order no:
+			<input type="number" id="number" name="number" min="100" max="500" pattern="[0-9]" size="50" placeholder="Enter your order number..."></p>
+		<div>	
+			
+		<div class="form-group">
+			<p>Which is your favourite dish?
+			<select id="dropdown" name="fav" class="form-control" required>
+				<option disabled selected value>Select your favourite</option> 
+				<option value="chicken">Chicken</option>
+				<option value="mutton">Mutton</option>
+				<option value="fish">Fish</option>
+			</select></p>
+		</div>
+		<br>
+		<div id="fb">
+			<fieldset>
+			<legend>
+			<h4>Quality of food:</h4>
+			</legend>
+			<input type="radio" name="feedback1" value="excellent" checked>Excellent</input>
+			<input type="radio" name="feedback1" value="good">Good</input>
+			<input type="radio" name="feedback1" value="fair">Fair</input>
+			<input type="radio" name="feedback1" value="poor">Poor</input>
+			</fieldset>
+			
+			<fieldset>
+			<legend>
+			<h4>Portion size:</h4>
+			<input type="radio" name="feedback2" value="excellent" checked>Excellent</input>
+			<input type="radio" name="feedback2" value="good">Good</input>
+			<input type="radio" name="feedback2" value="fair">Fair</input>
+			<input type="radio" name="feedback2" value="poor">Poor</input>
+			</fieldset>
+			
+			<fieldset>
+			<legend>
+			<h4>Ease of ordering:</h4>
+			<input type= "radio" name="feedback3" value="excellent" checked>Excellent</input>
+			<input type="radio" name="feedback3" value="good">Good</input>
+			<input type="radio" name="feedback3" value="fair">Fair</input>
+			<input type="radio" name="feedback3" value="poor">Poor</input>
+			</fieldset>
+			
+			<fieldset>
+			<legend>
+			<h4>Service:</h4>
+			<input type="radio" name="feedback4" value="excellent" checked>Excellent</input>
+			<input type="radio" name="feedback4" value="good">Good</input>
+			<input type="radio" name="feedback4" value="fair">Fair</input>
+			<input type="radio" name="feedback4" value="poor">Poor</input>
+			</fieldset>
+			
+			<fieldset>
+			<legend>
+			<h4>Cleanliness:</h4>
+			<input type="radio" name="feedback5" value="excellent" checked>Excellent</input>
+			<input type="radio" name="feedback5" value="good">Good</input>
+			<input type="radio" name="feedback5" value="fair">Fair</input>
+			<input type="radio" name="feedback5" value="poor">Poor</input>
+			</fieldset>
+			
+			<fieldset>
+			<legend>
+			<h4>Overall value:</h4>
+			<input type="radio" name="feedback6" value="excellent" checked>Excellent</input>
+			<input type="radio" name="feedback6" value="good">Good</input>
+			<input type="radio" name="feedback6" value="fair">Fair</input>
+			<input type="radio" name="feedback6" value="poor">Poor</input>
+			</fieldset>
+		</div>
+		<br>
+		<div>
+			<h4>Comments?</h4> <textarea name="comments" cols="50" rows="5">Enter your comments</textarea>
+		</div>
+		<br>
+		<div>
+			<fieldset>
+			<legend>
+			<h4>Age?</h4>
+			</legend>
+			<input type="radio" name="age" name="under 18">Under 18</input>
+			<input type="radio" name="age" name="19to34">19 - 34</input>
+			<input type="radio" name="age" name="35to54">35 - 54</input>
+			<input type="radio" name="age" name="55+">55+</input>
+			</fieldset>
+			
+			<fieldset>
+			<legend>
+			<h4>Gender?</h4>
+			</legend>
+			<input type="radio" name="gender" value="male">Male</input>
+			<input type="radio" name="gender" value="female">Female</input>
+			</fieldset>
+		</div>
+		<br>
+		<div>
+			<fieldset>
+			<legend>
+			<h4>How did you learn about us?</h4>
+			</legend>
+			<label><input type="checkbox" name="about" value="newspaper">Newspaper</input></label>
+			<label><input type="checkbox" name="about" value="tv">TV</input></label>
+			<label><input type="checkbox" name="about" value="radio">Radio</input></label>
+			<label><input type="checkbox" name="about" value="friend">Friend</input></label>
+			<label><input type="checkbox" name="about" value="other">Other: </input></label>
+			<input type="text" name="otherinput" size="50">
+			</fieldset>
+		</div>
+		
+		<br>
+		<button name="submit" value="survey">Submit</button>
+		</form>
+		</div>
+		
+	</body>
+</html>
